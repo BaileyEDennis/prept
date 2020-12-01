@@ -10,8 +10,8 @@ import QuestionData from '../../helpers/data/questionData';
 
 export default class QuestionForm extends Component {
     state = {
-      firebaseKey: this.props.board?.firebaseKey || '',
       answer: this.props.board?.answer || '',
+      firebaseKey: this.props.board?.firebaseKey || '',
       question: this.props.board?.question || '',
     }
 
@@ -49,7 +49,7 @@ export default class QuestionForm extends Component {
               id="newQuestion"
               value={this.state.question}
               onChange={this.handleChange}
-              placeholder="Whats your question?"
+              placeholder="What's your question?"
               required
             />
           </FormGroup>
